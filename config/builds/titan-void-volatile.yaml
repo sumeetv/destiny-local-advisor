@@ -1,0 +1,51 @@
+{
+  "id": "titan-void-volatile",
+  "name": "Void grenade / volatile",
+  "class": "Titan",
+  "mode": "pve",
+  "playstyles": [
+    "ability-spam",
+    "grenade",
+    "explosions",
+    "flashy"
+  ],
+  "history": [],
+  "required": {
+    "subclass": "Void",
+    "abilities": [
+      "Controlled Demolition",
+      "Echo of Instability"
+    ],
+    "exoticArmor": null
+  },
+  "preferred": {
+    "exoticArmor": [
+      "Armamentarium"
+    ],
+    "weaponTraits": [
+      "grenade-energy",
+      "void-synergy",
+      "area-damage"
+    ]
+  },
+  "substitutions": [],
+  "ratings": {
+    "fun": 9,
+    "easeOfUse": 6,
+    "endgameViability": 6,
+    "bossDamage": 4,
+    "pvp": 1
+  },
+  "notes": [
+    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox."
+  ],
+  "metadata": {
+    "version": 1,
+    "verifiedAt": null,
+    "sandboxVersion": "unverified",
+    "confidence": "draft",
+    "sources": [
+      "PLAN.md#9-build-recommendation-engine"
+    ]
+  }
+}

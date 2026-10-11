@@ -1,0 +1,53 @@
+{
+  "id": "titan-prismatic-consecration-stoicism",
+  "name": "Prismatic Consecration / Stoicism",
+  "class": "Titan",
+  "mode": "pve",
+  "playstyles": [
+    "ability-spam",
+    "melee",
+    "explosions",
+    "aggressive",
+    "flashy"
+  ],
+  "history": [],
+  "required": {
+    "subclass": "Prismatic",
+    "abilities": [
+      "Consecration",
+      "Knockout",
+      "Frenzied Blade"
+    ],
+    "exoticArmor": "Stoicism"
+  },
+  "preferred": {
+    "exoticArmor": [],
+    "weaponTraits": [
+      "melee-energy",
+      "area-damage"
+    ]
+  },
+  "substitutions": [
+    "Synthoceps"
+  ],
+  "ratings": {
+    "fun": 9,
+    "easeOfUse": 6,
+    "endgameViability": 6,
+    "bossDamage": 4,
+    "pvp": 1
+  },
+  "notes": [
+    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox.",
+    "Class-item perk rolls must be checked separately; owning Stoicism does not confirm a specific spirit combination."
+  ],
+  "metadata": {
+    "version": 1,
+    "verifiedAt": null,
+    "sandboxVersion": "unverified",
+    "confidence": "draft",
+    "sources": [
+      "PLAN.md#9-build-recommendation-engine"
+    ]
+  }
+}

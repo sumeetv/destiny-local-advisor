@@ -1,0 +1,5 @@
+.bungie-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 24px;padding:14px 18px;border:1px solid var(--border);border-radius:6px;background:#171b20}
+.bungie-controls p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}
+.bungie-controls>div{display:flex;align-items:center;gap:20px;flex-shrink:0}
+.sync-button{color:#d8e4c4;background:#293021;border:1px solid #526344;border-radius:4px;padding:9px 13px;font-size:12px}
+@media(max-width:700px){.bungie-controls{align-items:flex-start;flex-direction:column}.bungie-controls>div{width:100%;justify-content:space-between}}

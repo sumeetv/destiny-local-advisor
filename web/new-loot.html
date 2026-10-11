@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark">
+  <title>New Loot · Destiny Local Advisor</title>
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/cleanup.css">
+  <script type="module" src="/new-loot.js"></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="/">◈ DESTINY LOCAL ADVISOR</a><a class="subtle-button" href="/">Inventory / Refresh</a><a class="subtle-button" href="/cleanup">Vault Cleanup / DIM</a><a class="subtle-button" href="/upgrades">Upgrades</a><a class="subtle-button" href="/commentary">Commentary</a></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">AFTER YOUR SESSION</p><h1>What's new?</h1><p id="since" class="subtitle">Loading consecutive snapshots…</p></div><button id="reload" type="button" class="subtle-button">Reload new loot</button></div>
+    <p id="error" class="notice" role="alert" hidden></p>
+    <p id="summary" role="status" aria-live="polite"></p>
+    <p>Keep recommendations preserve your current protections. Review probably redundant items in <a href="/cleanup">Vault Cleanup / DIM</a>, where you explicitly select any Junk export.</p>
+    <section aria-label="New items"><h2>First seen</h2><div id="items"></div></section>
+    <section aria-label="Improved builds"><h2>Build fit improvements</h2><div id="builds"></div></section>
+    <details><summary id="absent-summary">Currently absent</summary><p>Previously present, currently absent. Cause unknown.</p><ul id="absent"></ul></details>
+    <details><summary>Evidence and limitations</summary><ul id="limitations"></ul></details>
+  </main>
+</body>
+</html>

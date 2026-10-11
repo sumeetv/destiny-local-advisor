@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Vault Cleanup · Destiny Local Advisor</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/cleanup.css">
+  <script type="module" src="/cleanup.js"></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="/">DESTINY LOCAL ADVISOR</a><a class="subtle-button" href="/">Inventory</a><a class="subtle-button" href="/upgrades">Upgrades</a><a class="subtle-button" href="/commentary">Commentary</a></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">VAULT CLEANUP</p><h1>Review your duplicates.</h1><p class="subtitle">Select individual candidates to suggest a Junk tag in DIM.</p></div><button id="reload-cleanup" class="subtle-button" type="button">Reload cleanup</button></div>
+    <section class="cleanup-panel" aria-label="DIM metadata import">
+      <h2>Import DIM tags and notes</h2>
+      <p>Export your weapons and armor CSV files from DIM, then import each here. Matching uses both Id and Hash. Existing Favorite, Keep and Archive tags are preserved. Export requires imported Tag and Notes values for each selected copy, including empty values.</p>
+      <form id="dim-import"><label>DIM CSV <input id="dim-file" type="file" accept=".csv,text/csv" required></label><button id="import-button" class="subtle-button" type="submit">Import metadata</button></form>
+      <p id="import-status" role="status" aria-live="polite"></p>
+    </section>
+    <section class="cleanup-panel" aria-label="Cleanup review">
+      <p id="cleanup-counts" role="status" aria-live="polite">Loading cleanup…</p>
+      <div class="cleanup-tools">
+        <label>Classification <select id="classification"><option value="DISMANTLE_CANDIDATE">Candidates</option><option value="REVIEW">Review</option><option value="KEEP">Keep</option><option value="PROTECTED">Protected</option><option value="all">All items</option></select></label>
+        <label>Type <select id="cleanup-type"><option value="all">Weapons and armor</option><option value="weapon">Weapons</option><option value="armor">Armor</option></select></label>
+        <label>Search <input id="cleanup-query" type="search" placeholder="Name, ID, perk or reason"></label>
+      </div>
+      <p>Each selection applies only to the current review. Reloading or importing metadata clears selections.</p>
+      <button id="export-dim" class="subtle-button" type="button" disabled>Download DIM Cleanup CSV (0 selected)</button>
+      <p>In DIM Settings, use “Import tags/notes from CSV” with the downloaded file. It sets selected items to Junk and appends the explanation to their existing notes. No equipment is dismantled.</p>
+      <p id="cleanup-error" class="notice" role="alert" hidden></p>
+      <p id="cleanup-limitations" class="muted"></p>
+      <div id="cleanup-items"></div>
+      <div class="pagination"><button id="cleanup-previous" type="button" class="subtle-button">← Previous</button><span id="cleanup-page"></span><button id="cleanup-next" type="button" class="subtle-button">Next →</button></div>
+    </section>
+  </main>
+</body>
+</html>

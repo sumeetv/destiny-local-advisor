@@ -1,0 +1,49 @@
+{
+  "id": "titan-arc-thunderclap",
+  "name": "Arc Thunderclap / Point-Contact Cannon Brace",
+  "class": "Titan",
+  "mode": "pve",
+  "playstyles": [
+    "ability-spam",
+    "melee",
+    "explosions",
+    "flashy"
+  ],
+  "history": [],
+  "required": {
+    "subclass": "Arc",
+    "abilities": [
+      "Thunderclap"
+    ],
+    "exoticArmor": "Point-Contact Cannon Brace"
+  },
+  "preferred": {
+    "exoticArmor": [],
+    "weaponTraits": [
+      "melee-energy",
+      "arc-synergy"
+    ]
+  },
+  "substitutions": [
+    "An Insurmountable Skullfort"
+  ],
+  "ratings": {
+    "fun": 9,
+    "easeOfUse": 6,
+    "endgameViability": 6,
+    "bossDamage": 4,
+    "pvp": 1
+  },
+  "notes": [
+    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox."
+  ],
+  "metadata": {
+    "version": 1,
+    "verifiedAt": null,
+    "sandboxVersion": "unverified",
+    "confidence": "draft",
+    "sources": [
+      "PLAN.md#9-build-recommendation-engine"
+    ]
+  }
+}

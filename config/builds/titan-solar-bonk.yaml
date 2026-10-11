@@ -1,0 +1,54 @@
+{
+  "id": "titan-solar-bonk",
+  "name": "Solar Throwing Hammer",
+  "class": "Titan",
+  "mode": "pve",
+  "playstyles": [
+    "ability-spam",
+    "melee",
+    "survivability",
+    "aggressive"
+  ],
+  "history": [
+    "solar-bonk"
+  ],
+  "required": {
+    "subclass": "Solar",
+    "abilities": [
+      "Throwing Hammer",
+      "Sol Invictus",
+      "Roaring Flames"
+    ],
+    "exoticArmor": null
+  },
+  "preferred": {
+    "exoticArmor": [
+      "Synthoceps",
+      "Wormgod Caress"
+    ],
+    "weaponTraits": [
+      "melee-energy",
+      "solar-synergy"
+    ]
+  },
+  "substitutions": [],
+  "ratings": {
+    "fun": 9,
+    "easeOfUse": 9,
+    "endgameViability": 6,
+    "bossDamage": 4,
+    "pvp": 1
+  },
+  "notes": [
+    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox."
+  ],
+  "metadata": {
+    "version": 1,
+    "verifiedAt": null,
+    "sandboxVersion": "unverified",
+    "confidence": "draft",
+    "sources": [
+      "PLAN.md#9-build-recommendation-engine"
+    ]
+  }
+}

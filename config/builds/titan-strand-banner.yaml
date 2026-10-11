@@ -1,0 +1,50 @@
+{
+  "id": "titan-strand-banner",
+  "name": "Strand Banner of War",
+  "class": "Titan",
+  "mode": "pve",
+  "playstyles": [
+    "melee",
+    "aggressive",
+    "survivability",
+    "support"
+  ],
+  "history": [],
+  "required": {
+    "subclass": "Strand",
+    "abilities": [
+      "Banner of War",
+      "Into the Fray"
+    ],
+    "exoticArmor": null
+  },
+  "preferred": {
+    "exoticArmor": [
+      "Synthoceps"
+    ],
+    "weaponTraits": [
+      "melee-energy",
+      "strand-synergy"
+    ]
+  },
+  "substitutions": [],
+  "ratings": {
+    "fun": 7,
+    "easeOfUse": 6,
+    "endgameViability": 6,
+    "bossDamage": 4,
+    "pvp": 1
+  },
+  "notes": [
+    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox."
+  ],
+  "metadata": {
+    "version": 1,
+    "verifiedAt": null,
+    "sandboxVersion": "unverified",
+    "confidence": "draft",
+    "sources": [
+      "PLAN.md#9-build-recommendation-engine"
+    ]
+  }
+}

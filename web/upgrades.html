@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark">
+  <title>Upgrades · Destiny Local Advisor</title>
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/cleanup.css">
+  <script type="module" src="/upgrades.js"></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="/">◈ DESTINY LOCAL ADVISOR</a><a class="subtle-button" href="/">Inventory / Refresh</a><a class="subtle-button" href="/new-loot">New Loot</a><a class="subtle-button" href="/cleanup">Vault Cleanup / DIM</a><a class="subtle-button" href="/commentary">Commentary</a></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">ACQUISITION PLANNER</p><h1>What should I pursue?</h1><p class="subtitle">Missing exotic armor from your PvE build templates, ranked for your account.</p></div><button id="reload" type="button" class="subtle-button">Reload upgrades</button></div>
+    <p id="error" class="notice" role="alert" hidden></p>
+    <p id="summary" role="status" aria-live="polite">Loading pursuits…</p>
+    <p>Gear-only plans retain unknown subclass unlocks as blockers. Weapon rolls and armor stat farming are outside this planner. Optional exotics are alternatives; you can equip one exotic armor piece.</p>
+    <p><a href="/downloads/upgrades.json" download>Download current JSON</a> · <a href="/downloads/upgrades.txt" download>Download current text report</a></p>
+    <p id="ranking-policy"></p>
+    <section aria-label="Ranked missing items"><h2>Ranked pursuits</h2><div id="pursuits"></div></section>
+    <section aria-label="Unconfirmed ownership"><h2>Verify ownership first</h2><div id="verification"></div></section>
+    <section aria-label="Unavailable pursuits"><h2>Unavailable in local source facts</h2><div id="unavailable"></div></section>
+    <section aria-label="Deferred pursuits"><h2>No modeled benefit under current preferences</h2><div id="deferred"></div></section>
+    <details><summary>Evidence and limitations</summary><p id="provenance"></p><ul id="limitations"></ul></details>
+  </main>
+</body>
+</html>

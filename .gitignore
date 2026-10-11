@@ -1,0 +1,26 @@
+# Dependencies and generated build/test output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+*.log
+
+# Generated reports and local account data
+output/
+data/manifest/
+data/auth/
+data/snapshots/
+data/tls/
+data/*.lock
+/profile-data*.json
+/destiny-*.csv
+
+# Environment variables and credentials (keep the placeholder template)
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+*.p12
+*.pfx

@@ -1,0 +1,51 @@
+{
+  "id": "titan-solar-consecration",
+  "name": "Solar Consecration / Synthoceps",
+  "class": "Titan",
+  "mode": "pve",
+  "playstyles": [
+    "ability-spam",
+    "melee",
+    "explosions",
+    "aggressive",
+    "flashy"
+  ],
+  "history": [],
+  "required": {
+    "subclass": "Solar",
+    "abilities": [
+      "Consecration"
+    ],
+    "exoticArmor": "Synthoceps"
+  },
+  "preferred": {
+    "exoticArmor": [],
+    "weaponTraits": [
+      "melee-energy",
+      "solar-synergy",
+      "area-damage"
+    ]
+  },
+  "substitutions": [
+    "Heart of Inmost Light"
+  ],
+  "ratings": {
+    "fun": 9,
+    "easeOfUse": 6,
+    "endgameViability": 6,
+    "bossDamage": 4,
+    "pvp": 1
+  },
+  "notes": [
+    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox."
+  ],
+  "metadata": {
+    "version": 1,
+    "verifiedAt": null,
+    "sandboxVersion": "unverified",
+    "confidence": "draft",
+    "sources": [
+      "PLAN.md#9-build-recommendation-engine"
+    ]
+  }
+}

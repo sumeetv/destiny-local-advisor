@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "preferences": {
+    "class": "Titan",
+    "playstyles": {
+      "ability-spam": 10,
+      "explosions": 10,
+      "flashy": 10,
+      "aggressive": 8,
+      "survivability": 7,
+      "gunplay": 5,
+      "support": 3,
+      "melee": 8,
+      "grenade": 10
+    },
+    "favorites": {
+      "weapons": [
+        "Witherhoard"
+      ],
+      "exotics": [
+        "Actium War Rig"
+      ]
+    },
+    "history": [
+      "solar-bonk",
+      "arc-grenade-spam",
+      "void-devour"
+    ],
+    "priorities": {
+      "fun": 10,
+      "easeOfUse": 8,
+      "endgameViability": 7,
+      "bossDamage": 5,
+      "pvp": 1
+    }
+  }
+}

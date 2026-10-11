@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "metadata": {
+    "confidence": "draft", "verifiedAt": null, "sandboxVersion": "unverified-concept-baseline",
+    "sources": ["PLAN.md sections 13 and 15"],
+    "notes": ["Illustrative local weights for role matching; not a current sandbox tier list.", "Scores are selected-perk evidence only. Missing perks and stats limit comparison. Enhanced perks are not assumed equivalent."]
+  },
+  "roles": {
+    "add-clear": {"mode": "pve", "description": "Defeat groups of enemies"},
+    "ability-engine": {"mode": "pve", "description": "Support grenade or melee ability loops"},
+    "single-target-damage": {"mode": "pve", "description": "Sustained damage against a single enemy"},
+    "boss-dps": {"mode": "pve", "description": "Damage-window perk concept", "ammoTypes": ["Special", "Heavy"]},
+    "champion-control": {"mode": "pve", "description": "Control-effect perk concept; champion effectiveness needs sandbox verification"},
+    "utility": {"mode": "pve", "description": "Handling, reload, or support use"},
+    "survivability": {"mode": "pve", "description": "Healing or defensive perk concept"},
+    "solar-synergy": {"mode": "pve", "description": "Solar ability-loop perk concept"},
+    "arc-synergy": {"mode": "pve", "description": "Arc ability-loop perk concept"},
+    "void-synergy": {"mode": "pve", "description": "Void ability-loop perk concept"},
+    "stasis-synergy": {"mode": "pve", "description": "Stasis ability-loop perk concept"},
+    "strand-synergy": {"mode": "pve", "description": "Strand ability-loop perk concept"},
+    "pvp-dueling": {"mode": "pvp", "description": "Primary dueling perk concept", "ammoTypes": ["Primary"]},
+    "pvp-special": {"mode": "pvp", "description": "Special-weapon PvP perk concept", "ammoTypes": ["Special"]}
+  },
+  "perks": {
+    "Demolitionist": {"ability-engine": 10, "add-clear": 3},
+    "Pugilist": {"ability-engine": 10},
+    "Wellspring": {"ability-engine": 7},
+    "Monte Carlo Method": {"ability-engine": 10},
+    "Incandescent": {"solar-synergy": 10, "add-clear": 9},
+    "Voltshot": {"arc-synergy": 10, "add-clear": 10},
+    "Chain Reaction": {"add-clear": 9},
+    "Headstone": {"stasis-synergy": 10, "add-clear": 7},
+    "Hatchling": {"strand-synergy": 10, "add-clear": 7},
+    "Chill Clip": {"champion-control": 9, "stasis-synergy": 8},
+    "Slice": {"strand-synergy": 8, "survivability": 5},
+    "Destabilizing Rounds": {"void-synergy": 8, "add-clear": 7},
+    "Repulsor Brace": {"void-synergy": 8, "survivability": 8},
+    "Heal Clip": {"survivability": 9, "solar-synergy": 7},
+    "Eddy Current": {"arc-synergy": 5, "utility": 4},
+    "Explosive Payload": {"add-clear": 5, "single-target-damage": 5},
+    "Feeding Frenzy": {"add-clear": 3},
+    "Adagio": {"single-target-damage": 3},
+    "Frenzy": {"single-target-damage": 7, "add-clear": 5},
+    "Vorpal Weapon": {"single-target-damage": 7, "boss-dps": 7},
+    "Bait and Switch": {"boss-dps": 10, "single-target-damage": 8},
+    "Auto-Loading Holster": {"boss-dps": 7, "utility": 8},
+    "Reconstruction": {"boss-dps": 7, "utility": 8},
+    "Moving Target": {"pvp-dueling": 9, "pvp-special": 7},
+    "Tap the Trigger": {"pvp-dueling": 9},
+    "Snapshot Sights": {"pvp-special": 9},
+    "Opening Shot": {"pvp-dueling": 7, "pvp-special": 9}
+  },
+  "pairs": [
+    {"perks": ["Demolitionist", "Voltshot"], "scores": {"ability-engine": 3, "add-clear": 3}, "reason": "Draft concept: ability energy and area damage can support an ability-heavy loop; trigger timing still requires review."},
+    {"perks": ["Demolitionist", "Incandescent"], "scores": {"ability-engine": 3, "solar-synergy": 3}, "reason": "Draft concept: grenade support with Solar area effects."},
+    {"perks": ["Repulsor Brace", "Destabilizing Rounds"], "scores": {"survivability": 4, "void-synergy": 4}, "reason": "Draft concept: complementary Void effects and defensive loop."},
+    {"perks": ["Moving Target", "Tap the Trigger"], "scores": {"pvp-dueling": 3}, "reason": "Draft concept: complementary dueling perks."},
+    {"perks": ["Auto-Loading Holster", "Bait and Switch"], "scores": {"boss-dps": 3}, "reason": "Draft concept: weapon rotation and reload support."}
+  ]
+}

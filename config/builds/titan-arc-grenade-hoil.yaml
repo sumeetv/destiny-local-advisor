@@ -1,0 +1,52 @@
+{
+  "id": "titan-arc-grenade-hoil",
+  "name": "Arc grenade spam / Heart of Inmost Light",
+  "class": "Titan",
+  "mode": "pve",
+  "playstyles": [
+    "ability-spam",
+    "grenade",
+    "explosions",
+    "flashy"
+  ],
+  "history": [
+    "arc-grenade-spam"
+  ],
+  "required": {
+    "subclass": "Arc",
+    "abilities": [
+      "Touch of Thunder"
+    ],
+    "exoticArmor": "Heart of Inmost Light"
+  },
+  "preferred": {
+    "exoticArmor": [],
+    "weaponTraits": [
+      "grenade-energy",
+      "arc-synergy",
+      "area-damage"
+    ]
+  },
+  "substitutions": [
+    "Armamentarium"
+  ],
+  "ratings": {
+    "fun": 9,
+    "easeOfUse": 9,
+    "endgameViability": 6,
+    "bossDamage": 4,
+    "pvp": 1
+  },
+  "notes": [
+    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox."
+  ],
+  "metadata": {
+    "version": 1,
+    "verifiedAt": null,
+    "sandboxVersion": "unverified",
+    "confidence": "draft",
+    "sources": [
+      "PLAN.md#9-build-recommendation-engine"
+    ]
+  }
+}

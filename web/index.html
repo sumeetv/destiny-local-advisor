@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Inventory · Destiny Local Advisor</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/sync.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="Destiny Local Advisor home"><span class="brand-mark" aria-hidden="true">◈</span><span>DESTINY<span class="brand-sub">LOCAL ADVISOR</span></span></a>
+    <a class="subtle-button" href="/cleanup">Vault Cleanup / DIM</a>
+    <a class="subtle-button" href="/new-loot">New Loot</a>
+    <a class="subtle-button" href="/upgrades">Upgrades</a>
+    <a class="subtle-button" href="/commentary">Commentary</a>
+    <span class="local-badge"><span class="status-dot"></span> LOCAL SNAPSHOT</span>
+  </header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">YOUR COLLECTION</p><h1>Know what you own.</h1><p class="subtitle">Every roll, every piece of armor. All in one place.</p></div><div class="snapshot"><span id="snapshot-date">Loading snapshot…</span><button id="reload" class="subtle-button" type="button">↻ Reload snapshot</button></div></div>
+    <section class="bungie-controls" aria-label="Bungie synchronization"><p id="bungie-status" role="status" aria-live="polite">Checking Bungie connection…</p><div><button id="connect-bungie" class="subtle-button" type="button" disabled>Connect Bungie</button><button id="sync-bungie" class="sync-button" type="button" disabled>Refresh from Bungie</button></div></section>
+    <p id="new-loot-summary" role="status" aria-live="polite"></p>
+    <section class="metrics" aria-label="Inventory summary">
+      <div><span class="metric-label">WEAPONS</span><strong id="weapon-count">—</strong><span>across your account</span></div>
+      <div><span class="metric-label">ARMOR</span><strong id="armor-count">—</strong><span>ready to inspect</span></div>
+      <div><span class="metric-label">VAULT</span><strong id="vault-count">—</strong><span>stored item stacks</span></div>
+      <div><span class="metric-label">CHARACTERS</span><strong id="character-count">—</strong><span id="character-names">—</span></div>
+    </section>
+    <section class="inventory-panel" aria-label="Inventory browser">
+      <div class="panel-heading"><div class="tabs" role="group" aria-label="Item type"><button class="tab active" type="button" data-type="all" aria-pressed="true">All items</button><button class="tab" type="button" data-type="weapon" aria-pressed="false">Weapons</button><button class="tab" type="button" data-type="armor" aria-pressed="false">Armor</button></div><div class="exports"><span>Export</span><a href="/downloads/inventory.json" download>JSON</a><a href="/downloads/weapons.csv" download>Weapons CSV</a><a href="/downloads/armor.csv" download>Armor CSV</a></div></div>
+      <div class="search-area"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search items, perks, or weapon types…" aria-label="Search items and perks" autocomplete="off"><kbd aria-hidden="true">/</kbd></label><div class="suggestions"><span>Try</span><button type="button" data-query="Witherhoard">Witherhoard</button><button type="button" data-query="Synthoceps">Synthoceps</button><button type="button" data-query="Heart of Inmost Light">Heart of Inmost Light</button><button type="button" data-query="Demolitionist">Demolitionist</button><button type="button" data-query="Voltshot">Voltshot</button></div></div>
+      <form id="filters" class="filters"><label>Location<select id="location"><option value="all">Everywhere</option><option value="vault">Vault</option><option value="titan">Titan</option><option value="hunter">Hunter</option><option value="warlock">Warlock</option><option value="postmaster">Postmaster</option><option value="shared">Shared inventory</option><option value="other">Other</option></select></label><label>Armor class<select id="class-type"><option value="all">All classes</option><option>Titan</option><option>Hunter</option><option>Warlock</option></select></label><label>Perk search<select id="perk-scope"><option value="available">Selected + available</option><option value="selected">Selected only</option></select></label><label>Sort by<select id="sort"><option value="name">Name A–Z</option><option value="power">Power, highest first</option><option value="tier">Exotics first</option></select></label><label class="checkbox-label"><input id="locked" type="checkbox"> Locked only</label><button id="clear" class="subtle-button" type="button">Reset filters</button></form>
+      <div class="results-bar"><p id="results-count" role="status" aria-live="polite">Loading inventory…</p><span>SELECT AN ITEM TO INSPECT ITS ROLL</span></div>
+      <div id="error" class="notice" role="alert" hidden></div>
+      <div class="table-wrap"><table><caption class="sr-only">Owned inventory items and their selected perks</caption><thead><tr><th scope="col">ITEM</th><th scope="col">LOCATION</th><th scope="col">POWER</th><th scope="col">SELECTED PERKS / MODS</th><th scope="col">STATE</th></tr></thead><tbody id="items"></tbody></table></div>
+      <div id="empty" class="empty-state" hidden><span aria-hidden="true">◇</span><h2>No matching items</h2><p>Try a different item or perk, or reset your filters.</p></div>
+      <div class="pagination"><button id="previous" type="button" class="subtle-button">← Previous</button><span id="page-count">—</span><button id="next" type="button" class="subtle-button">Next →</button></div>
+    </section>
+    <footer><span>Destiny Local Advisor <span class="footer-dot">·</span> Account data stays on this machine.</span><span id="manifest-info"></span></footer>
+  </main>
+  <dialog id="detail"><div class="detail-heading"><p class="eyebrow">ITEM DETAILS</p><button id="close-detail" type="button" class="subtle-button" aria-label="Close item details">Close ×</button></div><div id="detail-content"></div></dialog>
+</body>
+</html>
