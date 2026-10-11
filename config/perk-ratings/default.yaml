@@ -2,7 +2,7 @@
   "version": 1,
   "metadata": {
     "confidence": "draft", "verifiedAt": null, "sandboxVersion": "unverified-concept-baseline",
-    "sources": ["PLAN.md sections 13 and 15"],
+    "sources": ["docs/design-context.md#weapon-role-baseline"],
     "notes": ["Illustrative local weights for role matching; not a current sandbox tier list.", "Scores are selected-perk evidence only. Missing perks and stats limit comparison. Enhanced perks are not assumed equivalent."]
   },
   "roles": {

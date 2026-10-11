@@ -38,7 +38,7 @@
     "pvp": 1
   },
   "notes": [
-    "Baseline concept from PLAN.md; validate tuning and mod choices in your current sandbox."
+    "Draft local build concept; validate tuning and mod choices in your current sandbox."
   ],
   "metadata": {
     "version": 1,
@@ -46,7 +46,7 @@
     "sandboxVersion": "unverified",
     "confidence": "draft",
     "sources": [
-      "PLAN.md#9-build-recommendation-engine"
+      "docs/design-context.md#build-template-baseline"
     ]
   }
 }
