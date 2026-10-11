@@ -28,7 +28,7 @@ After another import, click **Reload snapshot** in the browser. Keep the same `-
 
 Direct sign-in is optional. Manual import and local analysis work without API credentials.
 
-1. Register a **private, confidential** app in the [Bungie application portal](https://www.bungie.net/en/Application). Grant only `ReadBasicUserProfile` and `ReadDestinyInventoryAndVault`. Register `https://127.0.0.1:3000/api/auth/bungie/callback` as its redirect URL.
+1. Register a **private, confidential** app in the [Bungie application portal](https://www.bungie.net/en/Application). Grant only `ReadBasicUserProfile` and `ReadDestinyInventoryAndVault` with a `Confidential` OAuth Client Type. Register `https://127.0.0.1:3000/api/auth/bungie/callback` as its redirect URL. Leave website and origin header blank.
 2. Copy `.env.example` to the ignored `.env.local` and set `BUNGIE_API_KEY`, `BUNGIE_CLIENT_ID`, and `BUNGIE_CLIENT_SECRET`. Keep `BUNGIE_REDIRECT_URI` identical to the registered URL. Environment variables already set in your shell take precedence over `.env.local`.
 3. Provide a locally trusted HTTPS certificate for `127.0.0.1`. For example, with [mkcert](https://github.com/FiloSottile/mkcert) installed:
 
